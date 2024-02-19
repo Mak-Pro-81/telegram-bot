@@ -4,20 +4,11 @@ import './App.css';
 const tg = window.Telegram.WebApp;
 
 function App() {
-  const onClose = () => {
-    tg.close();
-  };
-
   useEffect(() => {
     tg.ready();
   }, []);
 
-  return (
-    <>
-      Home
-      <button onClick={onClose}>Close App</button>
-    </>
-  );
+  return <>Home</>;
 }
 
 export default App;
